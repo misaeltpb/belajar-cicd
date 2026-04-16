@@ -1,0 +1,17 @@
+# Kapan pipeline ini jalan? (Setiap ada push ke branch main)
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest # Menggunakan server Linux gratis dari GitHub
+
+    steps:
+    - name: Ambil kode dari repo
+      uses: actions/checkout@v4
+
+    - name: Jalankan Script Simulasi Test
+      run: |
+        echo "Sedang memeriksa kode..."
+        echo "Test berhasil dijalankan pada $(date)"
