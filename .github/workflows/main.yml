@@ -15,3 +15,4 @@ jobs:
       run: |
         echo "Sedang memeriksa kode..."
         echo "Test berhasil dijalankan pada $(date)"
+        echo .(exit 1
