@@ -14,5 +14,4 @@ jobs:
     - name: Jalankan Script Simulasi Test
       run: |
         echo "Sedang memeriksa kode..."
-        echo "Test berhasil dijalankan pada $(date)"
-        echo .(exit 1
+        exit 1
